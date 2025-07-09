@@ -1,0 +1,30 @@
+import webbrowser
+
+# Ton code HTML (tronqué ici pour l'exemple, remplace-le par ton code complet)
+html_content = '''
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bastien Castets - CV</title>
+    <style>
+        body { font-family: Arial; margin: 20px; }
+        .name { font-size: 24px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="name">Bastien Castets</div>
+    <p>AI • Knowledge Management • Sales Enablement</p>
+</body>
+</html>
+'''
+
+# Chemin du fichier à créer
+file_path = "mon_cv.html"
+
+# Écriture du fichier
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+# Ouvrir dans le navigateur par défaut
+webbrowser.open(file_path)
